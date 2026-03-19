@@ -14,7 +14,7 @@
     html { scroll-behavior: smooth; }
     body { background: var(--deep); color: var(--white); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; overflow-x: hidden; line-height: 1.6; }
     #stars-canvas { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
-
+ 
     /* NAV */
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 5%; background: rgba(13,1,32,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(245,158,11,0.25); }
     .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
@@ -33,7 +33,7 @@
     .shop-menu-inner a { display: flex; align-items: center; gap: 10px; padding: 13px 18px; color: var(--white); text-decoration: none; font-size: .88rem; font-weight: 600; transition: background .15s; }
     .shop-menu-inner a:hover { background: rgba(245,158,11,.12); color: var(--gold); }
     .shop-dropdown:hover .shop-menu, .shop-dropdown:focus-within .shop-menu { display: block; }
-
+ 
     /* HERO */
     .hero { position: relative; z-index: 1; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 120px 6% 80px; background: radial-gradient(ellipse at 50% 60%, rgba(26,8,58,.9) 0%, rgba(13,1,32,0) 70%); }
     .hero-badge { display: inline-block; background: rgba(245,158,11,.15); border: 1px solid rgba(245,158,11,.5); color: var(--gold); font-size: .78rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 18px; border-radius: 100px; margin-bottom: 28px; }
@@ -49,13 +49,13 @@
     .stat { text-align: center; }
     .stat strong { display: block; font-size: 1.8rem; font-weight: 900; color: var(--gold); }
     .stat span { font-size: .85rem; color: var(--grey); }
-
+ 
     /* SECTIONS */
     section { position: relative; z-index: 1; padding: 90px 6%; }
     .section-label { text-align: center; font-size: .78rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
     .section-title { text-align: center; font-size: clamp(1.8rem,4vw,2.8rem); font-weight: 900; margin-bottom: 14px; }
     .section-sub { text-align: center; color: var(--grey); font-size: 1.05rem; max-width: 560px; margin: 0 auto 56px; }
-
+ 
     /* PRODUCT GRID */
     .products-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
     .product-card { background: var(--card); border: 1px solid rgba(245,158,11,.2); border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; transition: transform .25s,border-color .25s,box-shadow .25s; }
@@ -74,7 +74,7 @@
     .card-price span { font-size: 1rem; color: var(--grey); text-decoration: line-through; font-weight: 400; margin-left: 8px; }
     .btn-card { display: block; text-align: center; background: linear-gradient(135deg,var(--gold),#d97706); color: var(--deep); font-weight: 800; padding: 14px 24px; border-radius: 100px; text-decoration: none; font-size: .95rem; transition: transform .2s,box-shadow .2s; }
     .btn-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245,158,11,.4); }
-
+ 
     /* FEATURED BUNDLE */
     .featured-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
     .featured-books { display: flex; flex-direction: column; gap: 12px; }
@@ -82,14 +82,14 @@
     .book-icon { font-size: 1.5rem; flex-shrink: 0; }
     .book-info strong { display: block; font-size: .95rem; }
     .book-info span { font-size: .8rem; color: var(--grey); }
-
+ 
     /* WHY */
     .why-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
     .why-card { text-align: center; padding: 36px 24px; background: var(--card); border: 1px solid rgba(245,158,11,.12); border-radius: 18px; }
     .why-icon { font-size: 2.4rem; margin-bottom: 16px; }
     .why-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; }
     .why-card p { color: var(--grey); font-size: .9rem; }
-
+ 
     /* FOOTER */
     .gold-bar { height: 4px; background: linear-gradient(90deg,var(--deep),var(--gold),var(--deep)); }
     footer { position: relative; z-index: 1; border-top: 1px solid rgba(245,158,11,.15); padding: 50px 6% 40px; text-align: center; }
@@ -102,14 +102,14 @@
     .footer-links a { color: var(--grey); text-decoration: none; font-size: .9rem; transition: color .2s; }
     .footer-links a:hover { color: var(--gold); }
     .footer-copy { color: var(--grey); font-size: .8rem; }
-
+ 
     @media(max-width:700px) { .featured-inner { grid-template-columns: 1fr; } }
     @media(max-width:600px) { nav { padding: 14px 4%; } .hero { padding: 100px 4% 60px; } section { padding: 60px 4%; } .nav-right .btn-nav { display: none; } }
   </style>
 </head>
 <body>
 <canvas id="stars-canvas"></canvas>
-
+ 
 <nav>
   <a href="#" class="nav-logo">
     <div class="logo-icon">C</div>
@@ -137,7 +137,7 @@
     </div>
   </div>
 </nav>
-
+ 
 <section class="hero">
   <div class="hero-badge">🚀 AI-Powered Business Tools</div>
   <h1>Build Your Empire<br>with <span>AI-Powered Prompts</span></h1>
@@ -152,13 +152,13 @@
     <div class="stat"><strong>0</strong><span>AI experience needed</span></div>
   </div>
 </section>
-
+ 
 <section id="products">
   <p class="section-label">Digital Products</p>
   <h2 class="section-title">Your AI Business Toolkit</h2>
   <p class="section-sub">Pick the pack that fits your next move — or grab the bundle and get everything at once.</p>
   <div class="products-grid">
-
+ 
     <div class="product-card">
       <div class="card-icon">📊</div>
       <span class="card-badge badge-new">Bestseller</span>
@@ -173,7 +173,7 @@
       <div class="card-price">$14</div>
       <a href="https://cosmicdrive.gumroad.com/l/oqophu" target="_blank" class="btn-card">Get Instant Access →</a>
     </div>
-
+ 
     <div class="product-card">
       <div class="card-icon">📧</div>
       <span class="card-badge badge-new">New</span>
@@ -188,7 +188,7 @@
       <div class="card-price">$12</div>
       <a href="https://cosmicdrive.gumroad.com" target="_blank" class="btn-card">Get Instant Access →</a>
     </div>
-
+ 
     <div class="product-card">
       <div class="card-icon">📱</div>
       <span class="card-badge badge-new">New</span>
@@ -203,7 +203,7 @@
       <div class="card-price">$12</div>
       <a href="https://cosmicdrive.gumroad.com" target="_blank" class="btn-card">Get Instant Access →</a>
     </div>
-
+ 
     <div class="product-card">
       <div class="card-icon">🗓</div>
       <span class="card-badge badge-new">New</span>
@@ -218,7 +218,7 @@
       <div class="card-price">$17</div>
       <a href="https://cosmicdrive.gumroad.com" target="_blank" class="btn-card">Get Instant Access →</a>
     </div>
-
+ 
     <div class="product-card featured">
       <div class="featured-inner">
         <div>
@@ -236,10 +236,10 @@
         </div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <section style="background:linear-gradient(180deg,rgba(26,8,58,.3) 0%,transparent 100%);">
   <p class="section-label">Why It Works</p>
   <h2 class="section-title">Stop Guessing. Start Prompting.</h2>
@@ -251,7 +251,7 @@
     <div class="why-card"><div class="why-icon">🚀</div><h3>Launch Faster</h3><p>The 30-Day Playbook gives you a complete day-by-day action plan. No guessing what to do next. Just execute and build.</p></div>
   </div>
 </section>
-
+ 
 <div class="gold-bar"></div>
 <footer>
   <div class="footer-logo">CosmicEmpireHQ</div>
@@ -272,7 +272,7 @@
   </div>
   <p class="footer-copy">© 2026 CosmicEmpireHQ · Digital products only · All rights reserved</p>
 </footer>
-
+ 
 <script>
 const canvas = document.getElementById('stars-canvas');
 const ctx = canvas.getContext('2d');
